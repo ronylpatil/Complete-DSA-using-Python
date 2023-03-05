@@ -2,6 +2,13 @@ nums = [1,2,3,4,3]
 prev_greatest = []
 stack = []
 
+def isEmpty(stack) :
+    if len(stack) == 0 : return True
+    else : return False
+
+def top() : return stack[-1]
+
+
 for i in nums :
     if isEmpty(stack) :
         prev_greatest.append(-1)
